@@ -33,6 +33,12 @@ Then("the remove from wishlist button should be visible", () => {
     .should("be.visible");
 });
 
+Then("the print button should be visible", () => {
+  productsPage.productsPageElemenets
+    .printButton()
+    .should("be.visible");
+});
+
 When("I remove the product from wishlist", () => {
   productsPage.productsPageElemenets.removeFromWichListButton().click();
 });

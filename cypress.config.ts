@@ -28,7 +28,7 @@ export default defineConfig({
     // Your existing config
     env: {
       username: "vasilevasluian",
-      password: "8@L3qQhs@NtK8y8"
+      password: "8@L3qQhs@NtK8y81"
     },
     baseUrl: "https://automationteststore.com/",
     

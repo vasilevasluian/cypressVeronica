@@ -38,3 +38,8 @@ Then("I take a screenshot", () => {
 Then("I should see error message {string}", (errorMessage: string) => {
   loginPage.assertErrorMessage(errorMessage);
 });
+
+When("I enter valid credentials", () => {
+  loginPage.loginPageElements.loginInput().type(Cypress.env("username"));
+  loginPage.loginPageElements.passwordInput().type(Cypress.env("password"));
+});
